@@ -24,7 +24,7 @@ function App() {
 
     const handleUpload = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/api/upload', data);
+            const response = await axios.post('https://studentbackend.netlify.app/.netlify/functions/api/upload', data);
             console.log('Data uploaded successfully:', response.data);
             alert('Data submitted successfully!'); 
         } catch (error) {
